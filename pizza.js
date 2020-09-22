@@ -12,22 +12,26 @@ const pizzas=[
         price: 22
     }
 ];
+
 let a=new Date().getTime(); // მილიწამები 1970 დან შეკვეთის დაწყებამდე
 
 function random(){
-    return Math.floor(Math.random()*pizzas.length);
+    return Math.floor(Math.random() * pizzas.length);
 };
+
 let x=random(); //მასივის შემთხვევითი ინდექსი
 
 console.log("თქვენი პიცა ("+ pizzas[x].name+") მზადდება");
 
 setTimeout(() => {
-    console.log ("თქვენი პიცა გზაშია");
+    console.log("თქვენი პიცა გზაშია");
 }, 2000);
 
 setTimeout(() => {
-    console.log ("თქვენი პიცა ადგილზეა, ფასი - " + pizzas[x].price , "ლარი");
-    let b=new Date().getTime(); // მილიწამები 1970 დან შეკვეთის დასრულებისას
-    let shekvetisDro=(b-a);
-    console.log ("შეკვეთის დრო: " + shekvetisDro, "მილიწამი");
+    console.log("თქვენი პიცა ადგილზეა, ფასი - " + pizzas[x].price , "ლარი");
+    
+    let b = new Date().getTime(); // მილიწამები 1970 დან შეკვეთის დასრულებისას
+    let shekvetisDro=(b - a);
+
+    console.log ("შეკვეთის დრო: " + shekvetisDro / 1000, "წამი");
 }, 5000);
