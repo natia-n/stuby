@@ -13,13 +13,13 @@ const pizzas=[
     }
 ];
 
-let a=new Date(); // დრო შეკვეთის დაწყებამდე
-
 function random(){
     return Math.floor(Math.random() * pizzas.length);
 };
 
 let x=random(); //მასივის შემთხვევითი ინდექსი
+
+let a=new Date(); // დრო შეკვეთის დაწყებამდე
 
 console.log("თქვენი პიცა ("+ pizzas[x].name+") მზადდება");
 
@@ -35,5 +35,6 @@ setTimeout(() => {
     
         console.log ("შეკვეთის დრო: " + shekvetisDro / 1000, "წამი");
     }, 5000);
+    
 }, 2000);
 
