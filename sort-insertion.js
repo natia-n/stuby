@@ -1,5 +1,3 @@
-let k=[9, 2, 7, 1, 0, 1, 8, 0]
-
 function insertionSort(a){
     let x;
     let j;
@@ -12,4 +10,5 @@ function insertionSort(a){
     }
 }
 
+let k=[9, 2, 7, 1, 0, 1, 8, 0]
 console.log(k);

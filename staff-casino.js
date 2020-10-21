@@ -58,7 +58,6 @@ staff6.salary = 1500;
 staff6.coefficient = 8;
 staff6.coefficient_Price = 30;
 
-
 const Department = {
     id: 0,
     name: "",
@@ -116,7 +115,6 @@ const Department = {
         this.lowestSalary()+=m;
     }
 }
-
 
 const department1 = {...Department, staff: [...Department.staff]};
 department1.name = "Management";

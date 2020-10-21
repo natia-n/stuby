@@ -18,7 +18,6 @@ function findPrimes(a){
         }
         
     }
-
     return b;
 }
 
@@ -31,5 +30,4 @@ x.push(53);
 console.log(x);
 console.log(findPrimes(b));
 console.log(findPrimes(c));
-
 console.log(isPrime(47));

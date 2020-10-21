@@ -233,7 +233,6 @@ const Team = {
             let x=Math.floor(Math.random()*b);
             return this.players[x];
         }
-    
 }
 
 const team1 = Object.create(Team);
@@ -250,10 +249,5 @@ team1.addPlayer(player8);
 team1.addPlayer(player9);
 team1.addPlayer(player10);
 team1.addPlayer(player11);
-
-// console.log(team1.playersBySalary);
-// console.log(team1.players);
-// console.log (team1.bestBombardier());
-
 
 console.log(team1.randomPlayer());
